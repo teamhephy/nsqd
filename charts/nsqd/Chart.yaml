@@ -1,7 +1,7 @@
 name: nsqd
-home: https://github.com/deisthree/nsq
+home: https://github.com/teamhephy/nsq
 version: <Will be populated by the ci before publishing the chart>
 description: A kubernetes based docker image for running nsq daemon.
 maintainers:
-  - name: Deis Team
-    email: engineering@deis.com
+  - name: Team Hephy
+    email: team@teamhephy.com
