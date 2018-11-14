@@ -1,7 +1,5 @@
 #!/bin/bash
 set -eo pipefail
 
-export MAX_READY_COUNT=${MAX_READY_COUNT:-10000}
-export DATA_PATH=${DATA_PATH:-/opt/nsq/data}
 export CONFIG_PATH=${CONFIG_PATH:-/opt/nsq/conf/nsqd.cfg}
 exec nsqd -config "${CONFIG_PATH}"
