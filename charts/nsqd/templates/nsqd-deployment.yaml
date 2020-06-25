@@ -21,7 +21,7 @@ spec:
       serviceAccount: deis-nsqd
       containers:
         - name: deis-nsqd
-          image: quay.io/{{.Values.org}}/nsq:{{.Values.docker_tag}}
+          image: {{.Values.org}}/nsq:{{.Values.docker_tag}}
           imagePullPolicy: {{.Values.pull_policy}}
 {{- if or (.Values.limits_cpu) (.Values.limits_memory)}}
           resources:
