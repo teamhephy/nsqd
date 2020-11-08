@@ -1,10 +1,8 @@
 
-# Deis NSQ
-[![Build Status](https://ci.deis.io/job/nsq/badge/icon)](https://ci.deis.io/job/nsq)
+# Hephy NSQD
+[![Build Status](https://api.travis-ci.org/teamhephy/nsqd.svg?branch=master)](https://travis-ci.org/teamhephy/nsqd)
 
-Deis (pronounced DAY-iss) Workflow is an open source Platform as a Service (PaaS) that adds a developer-friendly layer to any [Kubernetes](http://kubernetes.io) cluster, making it easy to deploy and manage applications on your own servers.
-
-![Deis Graphic](https://getdeis.blob.core.windows.net/get-deis/deis-graphic-small.png)
+Hephy (pronounced HEF-ee) Workflow is an open source Platform as a Service (PaaS) that adds a developer-friendly layer to any [Kubernetes](http://kubernetes.io) cluster, making it easy to deploy and manage applications on your own servers.
 
 A NSQ image for running on a kubernetes cluster.
 

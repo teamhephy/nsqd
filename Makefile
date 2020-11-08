@@ -3,12 +3,12 @@ include includes.mk
 
 DOCKER_HOST = $(shell echo $$DOCKER_HOST)
 BUILD_TAG ?= git-$(shell git rev-parse --short HEAD)
-SHORT_NAME ?= nsq
+SHORT_NAME ?= nsqd
 DEPLOYMENT_NAME ?= nsqd
-DEIS_REGISTRY ?= ${DEV_REGISTRY}
-IMAGE_PREFIX ?= deis
+HEPHY_REGISTRY ?= ${DEV_REGISTRY}
+IMAGE_PREFIX ?= hephy
 
-TEST_ENV_PREFIX := docker run --rm -v ${CURDIR}:/bash -w /bash quay.io/deis/shell-dev
+TEST_ENV_PREFIX := docker run --rm -v ${CURDIR}:/bash -w /bash hephy/shell-dev
 SHELL_SCRIPTS = $(wildcard rootfs/opt/nsq/bin/*)
 
 include versioning.mk
