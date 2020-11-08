@@ -1,0 +1,9 @@
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: deis-nsqd
+spec:
+  minAvailable: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: deis-nsqd
