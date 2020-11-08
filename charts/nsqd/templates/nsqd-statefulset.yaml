@@ -1,5 +1,5 @@
 apiVersion: {{ template "APIVersion" . }}
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: deis-nsqd
   labels:
@@ -7,7 +7,7 @@ metadata:
   annotations:
     component.deis.io/version: {{ .Values.docker_tag }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicas }}
   strategy:
     type: Recreate
   selector:

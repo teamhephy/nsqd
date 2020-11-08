@@ -1,5 +1,4 @@
 #!/bin/sh
-set -eo pipefail
 
 export CONFIG_PATH=${CONFIG_PATH:-/opt/nsq/conf/nsqd.cfg}
 exec nsqd -config "${CONFIG_PATH}"

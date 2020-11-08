@@ -1,4 +1,4 @@
-FROM nsqio/nsq:v1.1.0
+FROM nsqio/nsq:v1.2.0
 
 RUN mkdir -p /opt/nsq/data \
     && adduser \
