@@ -17,7 +17,7 @@ build: docker-build
 push: docker-push
 
 docker-build:
-	docker build ${DOCKER_BUILD_FLAGS} -t ${IMAGE} rootfs
+	DOCKER_BUILDKIT=1 docker build ${DOCKER_BUILD_FLAGS} -t ${IMAGE} rootfs
 	docker tag ${IMAGE} ${MUTABLE_IMAGE}
 
 clean: check-docker
