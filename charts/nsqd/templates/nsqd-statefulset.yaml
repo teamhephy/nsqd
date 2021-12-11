@@ -19,6 +19,10 @@ spec:
       labels:
         app: deis-nsqd
     spec:
+{{- with .Values.global.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+{{- end }}
       serviceAccount: deis-nsqd
       containers:
         - name: deis-nsqd
