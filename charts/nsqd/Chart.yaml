@@ -1,6 +1,6 @@
 name: nsqd
 home: https://github.com/teamhephy/nsq
-version: <Will be populated by the ci before publishing the chart>
+version: 2.5.2
 description: A kubernetes based docker image for running nsq daemon.
 maintainers:
   - name: Team Hephy
