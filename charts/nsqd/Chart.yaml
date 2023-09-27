@@ -1,7 +1,7 @@
 apiVersion: v2
 name: nsqd
 home: https://github.com/teamhephy/nsq
-version: 2.5.4
+version: 2.5.5
 description: A kubernetes based docker image for running nsq daemon.
 maintainers:
 - name: Team Hephy
