@@ -6,7 +6,6 @@ metadata:
     heritage: deis
     app: deis-nsqd
 spec:
-  clusterIP: None
   ports:
   - port: {{ .Values.http_port }}
     name: http
